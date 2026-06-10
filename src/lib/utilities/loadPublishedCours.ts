@@ -18,7 +18,7 @@ export type LoadedPost = {
 };
 
 // Public API
-export const loadPublishedPosts = async (): Promise<LoadedPost[]> => {
+const loadPublishedCours = async (): Promise<LoadedPost[]> => {
 	const modules = import.meta.glob('/src/content/cours/*.{md,svx,svelte.md}');
 	const rawModules = import.meta.glob('/src/content/cours/*.{md,svx,svelte.md}', {
 		query: '?raw',
@@ -88,6 +88,8 @@ export const loadPublishedPosts = async (): Promise<LoadedPost[]> => {
 
 	return publishedPosts.toSorted(byPostDateDesc);
 };
+
+export { loadPublishedCours, loadPublishedCours as loadPublishedPosts };
 
 const byPostDateDesc = <T extends { metadata: { date: string } }>(a: T, b: T) =>
 	b.metadata.date.localeCompare(a.metadata.date);
