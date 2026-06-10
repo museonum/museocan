@@ -23,6 +23,7 @@
 			authors={post.author}
 			readingTime={post.readingTime}
 			tags={post.tags}
+			baseRoute="/cours"
 		/>
 	{/each}
 </section>

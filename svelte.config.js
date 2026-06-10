@@ -43,15 +43,7 @@ const config = {
   kit: {
     adapter: adapter(),
     prerender: {
-      entries: [
-        '*',
-        '/cours/calendrier',
-        '/cours/msl6529-plan',
-        '/cours/msl6800-plan',
-        '/cours/msl6700-plan',
-        '/cours/directives',
-        '/cours/bibliographie'
-      ]
+      entries: ['*']
     },
     paths: {
       base: process.env.BASE_PATH ?? ''

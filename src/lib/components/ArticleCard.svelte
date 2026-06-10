@@ -12,13 +12,14 @@
 		authors?: BlogAuthorInput | BlogAuthorInput[];
 		readingTime?: number;
 		tags?: string[];
+		baseRoute?: string;
 	};
 
-	const { slug, title, date, authors, readingTime, tags }: Props = $props();
+	const { slug, title, date, authors, readingTime, tags, baseRoute = '/blog' }: Props = $props();
 
 	const normalizedAuthors = $derived(normalizeBlogAuthors(authors, authorProfiles));
 	const authorLabel = $derived(normalizedAuthors.length > 1 ? 'Auteurs' : 'Auteur');
-	const url = $derived(resolve('/blog/[slug]', { slug }));
+	const url = $derived(resolve(`${baseRoute}/[slug]`, { slug }));
 </script>
 
 <article class="postCard">
