@@ -71,7 +71,7 @@
 
 {#if breadcrumbs.length > 1}
 	<nav aria-label="Fil d'Ariane">
-		<ol>
+		<ul>
 			{#each breadcrumbs as item, index (item.href)}
 				<li aria-current={index === breadcrumbs.length - 1 ? 'page' : undefined}>
 					{#if index === breadcrumbs.length - 1}
@@ -81,12 +81,12 @@
 					{/if}
 				</li>
 			{/each}
-		</ol>
+		</ul>
 	</nav>
 {/if}
 
 <style>
-	nav ol {
+	nav ul {
 		display: flex;
 		flex-wrap: wrap;
 		list-style: none;

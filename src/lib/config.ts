@@ -4,11 +4,11 @@
  * Update this file with your own values.
  **/
 
-export const siteTitle = 'Blog template';
-export const siteDescription = 'Built with the SvelteKit Ouvroir’s Static Blog Starter';
-export const siteURL = 'example.com';
-export const siteLink = 'https://github.com/ouvroir/blog-template';
-export const siteAuthor = 'Ouvroir';
+export const siteTitle = 'Séminaire de muséologie canadienne';
+export const siteDescription = 'Site compagnon pour le séminaire de muséologie canadienne ';
+export const siteURL = 'https://museonum.github.io/museocan';
+export const siteLink = 'https://museonum.github.io/museocan';
+export const siteAuthor = 'Emmanuel Château-Dutier';
 export const contactInfo = 'emmanuel.chateau.dutier@umontreal.ca';
 
 // Optional author directory used to resolve profile links from IDs.
@@ -65,18 +65,8 @@ export const navItems = [
 		// hidden omitted = visible by default
 	},
 	{
-		title: 'Blog',
-		route: '/blog'
-		// hidden omitted = visible by default
-	},
-	{
 		title: 'Tags',
 		route: '/tags'
-		// hidden omitted = visible by default
-	},
-	{
-		title: 'Publications',
-		route: '/publications'
 		// hidden omitted = visible by default
 	},
 	{

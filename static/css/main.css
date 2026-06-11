@@ -32,6 +32,11 @@
       var(--theme-saturation)
       15% /* lower than is darker */
       );
+    --theme-color-lighter: hsl(
+      var(--theme-hue)
+      var(--theme-saturation)
+      96% /* lighter than light */
+      );
     --theme-color-title: var(--theme-color);
     /* fonts */
     --theme-font-work: 'IBM Plex Serif', serif;
@@ -282,4 +287,23 @@ ol > li {
 
 ol > li ol li {
   font-weight: normal;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: none ;
+    text-align: left;
+}
+/* Application des lignes alternées */
+tbody tr:nth-child(even) {
+    background-color: var(--theme-color-lighter)
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--theme-color-light)
 }
