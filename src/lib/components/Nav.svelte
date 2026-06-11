@@ -18,6 +18,7 @@
 	};
 </script>
 
+<header id="main-nav">
 <nav aria-label="Navigation principale">
 	<a href={withBase('/')} aria-label="Accueil">
 		<img src={asset('/images/amik.svg')} alt={siteTitle} height="60" />
@@ -35,3 +36,4 @@
 		{/each}
 	</ul>
 </nav>
+</header>

@@ -11,3 +11,10 @@
 	<h1>Séminaire de muséologie canadienne</h1>
 	<p>Bienvenue à la cohorte 2026 !</p>
 </header>
+
+<ul>
+	<li><a href="cours/calendrier">Calendrier synoptique</a></li>
+	<li><a href="cours/msl65800">MSL6800 – Séminaire intégrateur</a></li>
+	<li><a href="cours/msl6529">MSL6529 – Muséologie numérique</a></li>
+	<li><a href="cours/msl6529">MSL6700 – Travail dirigé</a></li>
+</ul>
