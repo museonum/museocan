@@ -18,9 +18,8 @@
 	};
 </script>
 
-<header id="main-nav">
 <nav aria-label="Navigation principale">
-	<a href={withBase('/')} aria-label="Accueil">
+	<a class="logo" href={withBase('/')} aria-label="Accueil">
 		<img src={asset('/images/amik.svg')} alt={siteTitle} height="60" />
 	</a>
 	<ul>
@@ -36,4 +35,35 @@
 		{/each}
 	</ul>
 </nav>
-</header>
+
+<style>
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	ul {
+		display: flex;
+		gap: 1.5rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul a {
+		color: var(--theme-color-title);
+		font-weight: bold;
+		text-decoration: none;
+		transition: opacity 0.2s ease;
+	}
+
+	ul a:hover,
+	ul a:focus-visible {
+		opacity: 0.7;
+	}
+
+	ul a[aria-current='page'] {
+		text-decoration: underline;
+	}
+</style>
