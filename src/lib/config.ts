@@ -65,6 +65,11 @@ export const navItems = [
 		// hidden omitted = visible by default
 	},
 	{
+		title: 'Blog',
+		route: '/Blog'
+		// hidden omitted = visible by default
+	},
+	{
 		title: 'Tags',
 		route: '/tags'
 		// hidden omitted = visible by default
